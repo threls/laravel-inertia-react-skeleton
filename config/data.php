@@ -1,5 +1,7 @@
 <?php
 
+use Spatie\LaravelData\Support\Creation\ValidationStrategy;
+
 return [
     /*
      * The package will use this format when working with dates. If this option
@@ -48,7 +50,7 @@ return [
     'casts' => [
         DateTimeInterface::class => Spatie\LaravelData\Casts\DateTimeInterfaceCast::class,
         BackedEnum::class => Spatie\LaravelData\Casts\EnumCast::class,
-//        Enumerable::class => Spatie\LaravelData\Casts\EnumerableCast::class,
+        //        Enumerable::class => Spatie\LaravelData\Casts\EnumerableCast::class,
     ],
 
     /*
@@ -124,7 +126,7 @@ return [
      * method. By default, only when a request is passed the data is being validated. This
      * behaviour can be changed to always validate or to completely disable validation.
      */
-    'validation_strategy' => \Spatie\LaravelData\Support\Creation\ValidationStrategy::OnlyRequests->value,
+    'validation_strategy' => ValidationStrategy::OnlyRequests->value,
 
     /*
      * A data object can map the names of its properties when transforming (output) or when

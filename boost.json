@@ -6,6 +6,11 @@
     "guidelines": true,
     "mcp": true,
     "nightwatch_mcp": false,
+    "packages": [
+        "spatie/laravel-medialibrary",
+        "spatie/boost-spatie-guidelines",
+        "tightenco/duster"
+    ],
     "sail": false,
     "skills": [
         "fortify-development",
@@ -13,6 +18,8 @@
         "wayfinder-development",
         "pest-testing",
         "inertia-react-development",
-        "tailwindcss-development"
+        "tailwindcss-development",
+        "medialibrary-development",
+        "spatie-laravel-php-standards"
     ]
 }

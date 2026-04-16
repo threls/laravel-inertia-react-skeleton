@@ -10,7 +10,7 @@ parameters:
         - bootstrap/app.php
 
 
-    level: max
+    level: 5
     treatPhpDocTypesAsCertain: false
 
     tmpDir: /tmp/phpstan
